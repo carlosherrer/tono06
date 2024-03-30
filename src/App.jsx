@@ -1,23 +1,19 @@
 import React from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Inicio from './componentes/Inicio'
-import Personaje from './componentes/Personaje'
+
 import './App.css'
 
 function App() {  
   return (
-    <div className="Contenedor">
-     
-      <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<Inicio></Inicio>}></Route>
-            <Route path='/personaje/:id' element={<Personaje></Personaje>}></Route>
-          
-        </Routes>
-      
-      </BrowserRouter>
-      
-    </div>
+
+    <>
+      <p className="text-3xl">Perdoname porfavor</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3FssZPKLlY4Zx5ST8DKX2vBLB_GxnTK6M2jn9arLFZ4ybZQ5m9IPo38xpSqvpn3dZ8EM"
+        alt="Garaynismo"
+        width={600}
+      />
+
+    </>
   )
 }
 
